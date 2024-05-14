@@ -1,7 +1,4 @@
-# LauraTor1410.github.io
-<!DOCTYPE html>
-<html lang="es">
-<head>
+
   <meta charset="UTF-8">
   <title>Portfolio Laura Tortosa</title>
 </head>
