@@ -6,9 +6,9 @@ import router from './router'
 
 import {addIcons, OhVueIcon} from 'oh-vue-icons'
 
-import {PiEevee, MdPets, FaTasks} from 'oh-vue-icons/icons'
+import {PiEevee, MdPets, FaTasks, HiSolidMenu} from 'oh-vue-icons/icons'
 
-addIcons(PiEevee, MdPets, FaTasks)
+addIcons(PiEevee, MdPets, FaTasks, HiSolidMenu)
 
 const app = createApp(App)
 

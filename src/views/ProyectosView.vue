@@ -16,7 +16,8 @@
         <div class="app">
             <v-icon name="fa-tasks" class="iconos"/>
             <a href="https://github.com/LauraTor1410/AgendaTareasPHP">Agenda Tareas</a>
-        </div>      
+            <img alt="agendaTareas" class="appPreview" src="/agenda.gif"/>
+        </div>
     </div>
 </template>
 <script>
