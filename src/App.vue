@@ -21,24 +21,39 @@
         <RouterLink to="/tecnologias">Tecnologías</RouterLink>
       </nav>
   </header>
-  <RouterView />
+  <div class="content">
+    <RouterView />
+  </div>
 </template>
 
 <style scoped>
 header {
   line-height: 1.5;
-  max-height: 100vh;
   padding: 1rem;
-  position: relative;
+  width: 100%;
+  top:0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
 }
-
+content {
+  margin-top: 5rem; 
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  min-height: 100vh; 
+  box-sizing: border-box;
+}
 .nav-toggle {
   background: none;
   border:none;
   font-size: 1.5rem;
   cursor: pointer;
+  position: absolute;
   top: 1rem;
-  right: 1rem;
+  left: 1rem;
 }
 
 nav {
@@ -46,11 +61,10 @@ nav {
   font-size: 1rem;
   font-family:'Holtwood One SC';
   text-align: center;
-  margin-top: 2rem;
   display:none;
   flex-direction: column;
-  align-items: center;
 }
+
 .iconoMenu{
   color: white;
   width: 35px;
@@ -94,15 +108,13 @@ nav a:first-of-type {
 
   nav {
     display: flex;
-    text-align: left;
+    flex-direction: row;
+    justify-content: center; 
     font-size: 1.5rem;
     padding: 1rem 0;
-    margin-top:  2rem;
-    flex-direction: row;
   }
 
   nav a {
-    display: inline-block;
     padding: 1rem 2rem;
   }
 }
