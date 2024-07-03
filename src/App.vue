@@ -24,6 +24,20 @@
   <div class="content">
     <RouterView />
   </div>
+  <footer>
+    <a href="https://github.com/LauraTor1410" target="_blank" class="icon-wrapper" data-tooltip="GitHub">
+      <v-icon name="bi-git" class="iconos"/>
+    </a>
+    <a href="mailto:lauratortosa1410@gmail.com" class="icon-wrapper" data-tooltip="lauratortosa1410@gmail.com">
+      <v-icon name="md-email-outlined" class="iconos"/>
+    </a>
+    <a href="tel:+34699706907" class="icon-wrapper" data-tooltip="+34699706907">
+      <v-icon name="fa-phone-alt" class="iconos"/>
+    </a>
+    <a href="https://www.linkedin.com/in/laura-tortosa-229a08287/" target="_blank" class="icon-wrapper" data-tooltip="LinkedIn">
+      <v-icon name="co-linkedin" class="iconos"/>
+    </a>
+  </footer>
 </template>
 
 <style scoped>
@@ -45,6 +59,45 @@ content {
   align-items: center; 
   min-height: 100vh; 
   box-sizing: border-box;
+}
+footer {
+  line-height: 1.5;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-wrapper {
+  position: relative;
+  display: inline-block;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.icon-wrapper::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+.icon-wrapper:hover::after {
+  opacity: 1;
+}
+
+.iconos {
+  width: 40px; 
+  height: 40px;
 }
 .nav-toggle {
   background: none;
