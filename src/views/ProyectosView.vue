@@ -18,6 +18,11 @@
             <a href="https://github.com/LauraTor1410/AgendaTareasPHP">Agenda Tareas</a>
             <img alt="agendaTareas" class="appPreview" src="/agenda.gif"/>
         </div>
+        <div class="app">
+            <v-icon name="fa-tasks" class="iconos"/>
+            <a href="https://github.com/LauraTor1410/SimuladorDeLucha">Simulador de Batalla </a>
+            <img alt="SimuladorDeLucha" class="appPreview" src="/artesMarciales.gif"/>
+        </div>
     </div>
 </template>
 <script>
